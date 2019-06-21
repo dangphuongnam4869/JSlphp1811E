@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Giải phương trình bậc 2</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		div.main{
+			width: 400px;
+			margin: auto;
+			text-align: center;
+			border: 1px solid green;
+			background-color: #E0E0E1;
+			padding: 10px 10px 60px;
+		}
+		div.main h2{
+			padding-bottom: 8px;
+		}
+		div.main input{
+			padding: 5px;
+			margin: 0px 0px 15px 0px;
+		}
+		div.main input{
+			width: 270px;
+			border: 2px solid silver;
+			border-radius: 5px;
+		}
+		div.main button{
+			padding: 10px;
+			color: white;
+			background-color: #4168AD;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		div.main p.bugTitle{
+			padding-bottom: 10px;
+			color: red;
+			font-weight: bold;
+		}
+		div.result #notice{
+			font-weight: bold;
+			text-align: left;
+		}
+		div.result #result{
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<h2>Giải phương trình bậc hai</h1>
+			<p id="bug"></p>
+		<div>
+			<label>Nhập hệ số a </label>
+			<input type="text" name="" id="a" class="z">
+			<!-- <p id="bug-a"></p> -->
+		</div>
+		<div>
+			<label>Nhập hệ số b </label>
+			<input type="text" id="b" class="z">
+			<!-- <p id="bug-b"></p> -->
+		</div>
+		<div>
+			<label>Nhập hệ số c </label>
+			<input type="text" id="c" class="z">
+			<!-- <p id="bug-c"></p> -->
+		</div>
+		<div>
+			<button id="solve">Giải phương trình</button>
+			<button id="reset">Reset</button>
+		</div>
+		<div class="result">
+			<p id="notice"></p>
+			<p id="result"></p>
+		</div>
+	</div>
+	<script src="../js/ptbac2.js" type="text/javascript" ></script>
+</body>
+</html>

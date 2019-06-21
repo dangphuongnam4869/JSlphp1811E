@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo JS Event</title>
+</head>
+<body onerror="errorPage();" onload="myOnload();" onresize="myResize(this);"
+onbeforeunload="myUnload();" > 
+<!-- Màu vàng là không tác động -->
+	<h1>JS Event</h1>
+	<button onclick="myClick('Nam'); test();">Click me</button>
+	<br>
+	<input type="text" name="" onblur="myBlur();" onfocus="myFocus();">
+	<br>
+	<button ondblclick="myDbClick();">dbClick</button>
+	<br><br>
+	<select onchange="myChange(this);">
+		<option value="Nam">Nam</option>
+		<option value="Nữ">Nữ</option>
+		<option value="2">Không xác định</option>
+	</select>
+	<br><br>
+	<input type="text" name="" onchange="getChangeText(this);" value="">
+	<br><br>
+	<input type="text" name="" onkeydown="myKeyDown(this);" onkeypress="myKeyPress(this);" onkeyup="myKeyUp(this)">
+	<br><br>
+	<img src="../picture/sohatv-favicon.png" alt="" onerror="myError();">
+	<br><br>
+	<button onmousedown="myMouseDown();" onmouseup="myMouseUp();">Mouse-down</button>
+	<br><br>
+	<button onmousemove="myMouseMove();">Mouse-move</button>
+	<br><br>
+	<img src="../picture/logoGameK.png" alt="" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+	<br><br>
+	<form action="" onreset="myReset();" onsubmit="mySubmit();">
+	<!-- <input type="reset" name=""> -->
+	<button type="reset">Reset</button>
+	<button type="submit">Submit</button>
+	<br><br>
+	<!-- khi van ban dc boi den, chi lam viec voi cac the input va textarea khong lam viec voi cac the p, h, .... -->
+	<textarea onselect="mySelect(this);">This is test</textarea>
+</form>
+	<script type="text/javascript" src="../js/jsevent1.js"></script>
+</body>
+</html>

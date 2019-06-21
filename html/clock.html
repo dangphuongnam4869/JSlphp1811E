@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Time</title>
+</head>
+<body>
+	<div class="container">
+		<h1 id="time">15:06:04</h1>
+		<h2 id="second">0</h2>
+		<button id="start">Start</button>
+		<button id="stop">Stop</button>
+		<br><br>
+		<p id="content"></p>
+		<textarea rows="5" cols="50" id="textData"></textarea>
+	</div>
+	<script type="text/javascript">
+		// Viet 1 ham xu ly thoi gian
+		let getTime;
+		let getSecond;
+		let textData = document.getElementById('textData');
+		textData.addEventListener('keyup',function(e){
+			// let data = this.value;
+			// document.getElementById('content').innerHTML = data;
+			console.log(e.keyCode);
+			if(e.keyCode == 13){
+				alert('ok');
+			}
+		});
+		function myTime(){
+			let date = new Date();
+			// Lay ra gio hien tai
+			let h = date.getHours();
+			let m = date.getMinutes();
+			m = (m < 10) ? "0"+m : m;
+			let s = date.getSeconds();
+			s = (s < 10) ? "0"+s : s;
+			//if(s<10){
+			//s="0"+s;
+			//}
+			//else{
+			//s = s;
+			//}
+			let time = h +":" + m +":"+ s;
+			document.getElementById('time').innerHTML = time;
+		}
+		function mySecond(){
+			let t = 0;
+			getSecond = setInterval(function(){
+				t++;
+				document.getElementById('second').innerHTML= t;
+			},1000);
+		}
+		document.getElementById('start').addEventListener('click',function(){
+			// Giup thuc thi 1 hanh dong nao do duoc lap di lap theo 1 chu ki thoi gian. (chay mai mai khong dung lai)
+			getTime = setInterval(myTime,1000);
+			mySecond();
+		});
+		document.getElementById('stop').addEventListener('click',function(){
+			// Dung lai hanh dong duoc lap lai
+			clearInterval(getTime);
+			clearInterval(getSecond);
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+#frmsignup{
+    margin: 60px 200px 60px 200px;
+    border: 1px solid black;
+    padding: 10px 10px 30px 10px;
+    width: 50%;
+    border-radius: 0.5cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 80%;
+    background-color: rgb(231, 250, 249);
+}
+
+h4{
+    text-align: center;
+}
+
+h5{
+    margin-left: 10px;
+    color: red;
+    font-weight: 100;
+}
+.ke_vach{
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+div{
+    margin-bottom: 10px; 
+}
+
+label{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.input{
+    width: 300px;
+    left: 400px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.pw{
+    width: 170px;
+    left: 400px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+.title{
+    font-style: italic;
+    font-weight: 700;
+}
+
+.gt_nam{
+    position: absolute;
+    left: 400px;
+}
+
+.gt_nu{
+    position: absolute;
+    left: 470px;
+}
+
+#nam{
+    position: absolute;
+    left: 410px;
+}
+
+#nu{
+    position: absolute;
+    left: 480px;
+}
+
+.submit{
+    left: 400px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.bd{
+    width: 150px;
+    left: 400px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+label.error{
+    color: red;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+}

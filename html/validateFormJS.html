@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validate Form JS</title>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" id="username">
+				<p id="errorUser"></p>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password">
+				<p id="errorPass"></p>
+			</div>
+			<div class="form-group">
+				<button type="button" id="btnLogin" class="btn">Login</button>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		//bat su kien click button login
+		let buttonLogin = document.getElementById('btnLogin');
+		buttonLogin.addEventListener('click',function(){
+			let user = document.getElementById('username').value;
+			let pass = document.getElementById('password').value;
+			// alert(`user: ${user}, pass: ${pass}`);
+			let checkUser;
+			let checkPass;
+			if(user == ''){
+				checkUser= false;
+				document.getElementById('errorUser').innerHTML= '(*) Vui long nhap username';
+				document.getElementById('errorUser').style.color= 'red';
+				document.getElementById('username').style.border= '2px solid red';
+			}	else{
+				checkUser= true;
+				document.getElementById('errorUser').innerHTML= '';
+				document.getElementById('username').style.border= '1px solid #ccc';
+			}	
+			if(pass == ''){
+				checkPass= false;
+				document.getElementById('errorPass').innerHTML= '(*) Vui long nhap password';
+				document.getElementById('errorPass').style.color= 'red';
+				document.getElementById('password').style.border= '1px solid red';
+			} else{
+				checkPass= true;
+				document.getElementById('errorPass').innerHTML= '';
+				document.getElementById('password').style.border= '1px solid #ccc';
+			}
+			if(checkPass && checkUser){
+				if(user === 'admin' && pass === '123'){
+					//dang nhap dung
+					alert('SUCCESS');
+				} else{
+					alert('WRONG USER OR PASSWORD');
+				}
+			}
+		});
+	</script>
+</body>
+</html>

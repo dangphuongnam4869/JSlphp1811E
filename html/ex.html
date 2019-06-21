@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="ex.css">
+</head>
+<body>
+    <form method="GET" id="frmsignup" action="">
+        <h4>ĐĂNG KÝ TÀI KHOẢN NGƯỜI DÙNG</h4>
+        <h5>Lưu ý: Bạn phải nhập đầy đủ các trường có dấu (*)</h5>
+        <div class="ke_vach"></div>
+        <div>
+            <label for="">Họ và tên (*):</label>
+            <input type="text" name="ten" class="input"><br/>
+        </div>
+        <div>
+            <label for="">Tên đăng nhập (*):</label>
+            <input type="text" name="user" class="input"><br/>
+        </div>
+        <div>
+            <label for="">Mật khẩu (*):</label>
+            <input type="password" id="password" name="mk" class="pw"><br/>
+        </div>
+        <div>
+            <label for="">Xác nhận mật khẩu (*):</label>
+            <input type="password" name="xnmk" class="pw"><br/>
+        </div>
+        <div>
+            <label for="">Thư điện tử (*):</label>
+            <input type="text" name="email" class="input"><br/>
+        </div>
+        <label for="" class="title">Thông tin cá nhân</label><br/>
+        <div>
+            <label for="">Ngày sinh (*):</label>
+            <input type="text" id="birthday" name="ns" class="bd"><br/>
+        </div>
+        <div>
+            <label for="">Giới tính (*):</label>
+            <input type="radio" name="gt" class="gt_nam" value="nam">
+            <label for="" id="nam">Nam</label>
+            <input type="radio" name="gt" class="gt_nu" value="nu">
+            <label for="" id="nu">Nữ</label>
+            <br/>
+        </div>
+        <div>
+            <label for="">Số CMTND (*):</label>
+            <input type="text" name="cmtnd" class="pw"><br/>
+        </div>
+        <div>
+            <label for="">Nơi cấp CMTND (*):</label>
+            <select name="noicapcmt" id="" class="input">
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">TP.Hồ Chí Minh</option>
+                <option value="Hue">Huế</option>
+                <option value="VP">Vĩnh Phúc</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Ngày cấp CMTND (*):</label>
+            <input type="text" id="ngaycapcmnd" name="ngaycapcmt" class="bd"><br/>
+        </div>
+        <div>
+            <label for="">Địa chỉ thường trú (*):</label>
+            <input type="text" name="diachi" class="input"><br/>
+        </div>
+        <div>
+            <label for="">Nơi ở hiện tại (*):</label>
+            <input type="text" name="noio" class="input"><br/>
+        </div>
+        <div>
+            <label for="">Dân tộc (*):</label>
+            <select name="dantoc" id="" class="pw">
+                <option value="kinh">Kinh</option>
+                <option value="thai">Thái</option>
+                <option value="dao">Dao</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Điện thoại:</label>
+            <input type="text" name="sdt" class="input"><br/>
+        </div>
+        <label for="" class="title">Các thông tin khác</label>
+        <div>
+            <label for="">Tên công ty:</label>
+            <input type="text" name="tencty" class="input"><br/>
+        </div>
+        <div>
+            <label for="">Địa chỉ công ty:</label>
+            <input type="text" name="diachicty" class="input"><br/>
+        </div>
+        <div>
+            <label for="">Điện thoại công ty:</label>
+            <input type="text" name="sdtcty" class="input"><br/>
+        </div>
+        <div>
+            <input type="submit" value="Đăng ký tài khoản" class="submit">
+        </div>
+    </form>
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/ex.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+</body>
+</html>
